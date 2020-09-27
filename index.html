@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movement Detection</title>
+    <style>
+        #video{
+            width: 500px;
+	        height: 375px;
+	        background-color: #666;
+        }
+        #canvas{
+            width: 1080px;
+	        height: 720px;
+        }
+    </style>
+</head>
+<body>
+<script>
+  function stopDetection(){
+      window.clearInterval();
+  }
+</script>
+<audio src="./assets/chords/Astronaut-Am.wav" id="audioAm"></audio>
+<audio src="./assets/chords/Astronaut-Cm.wav" id="audioCm"></audio>
+<video style="display: none;"id="video" autoplay playsinline width="640" height="480"></video>
+<canvas id="canvas" class=""></canvas>
+<p>CoDiNg...</p>
+<button id="start">Start detection movement</button>
+<button id="stop">stop detection movement</button>
+<script src="./index.js"></script>
+</body>
+</html>
